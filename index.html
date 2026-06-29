@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Aayush 💗</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="hearts"></div>
+
+<!-- Loading Screen -->
+<div id="loader">
+    <h1>Loading Love... 💗</h1>
+    <p>Please wait Babyyyy 🤭</p>
+</div>
+
+<!-- Main Website -->
+<div id="main" class="hidden">
+
+    <!-- Page 1 -->
+    <section class="page active" id="page1">
+
+        <h1>For Aayush 💗</h1>
+
+        <p class="quote">
+            This little corner of the internet was made only for you...
+        </p>
+
+        <button onclick="nextPage(2)">
+            Start Surprise 💕
+        </button>
+
+    </section>
+
+    <!-- Page 2 -->
+    <section class="page" id="page2">
+
+        <h2>One Small Question 🤭</h2>
+
+        <p>Ready for your surprise?</p>
+
+        <div class="btns">
+
+            <button onclick="nextPage(3)">
+                Yes 💗
+            </button>
+
+            <button id="noBtn">
+                No 🙈
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Page 3 -->
+    <section class="page" id="page3">
+
+        <h2>Why You? 🌸</h2>
+
+        <p id="reason">
+            Click below...
+        </p>
+
+        <button onclick="showReason()">
+            Next Reason 💕
+        </button>
+
+        <br><br>
+
+        <button onclick="nextPage(4)">
+            Continue 💗
+        </button>
+
+    </section>
+
+    <!-- Page 4 -->
+    <section class="page" id="page4">
+
+        <h2>One Last Thing... 💌</h2>
+
+        <div class="envelope" onclick="nextPage(5)">
+            💌
+        </div>
+
+        <p>Tap the envelope</p>
+
+    </section>
+
+    <!-- Page 5 -->
+    <section class="page" id="page5">
+
+        <h1>💌 A Letter For Aayush</h1>
+
+        <div id="letter">
+
+            <p id="typing"></p>
+
+        </div>
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
